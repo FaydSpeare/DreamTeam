@@ -63,5 +63,24 @@ router.delete('/:id', (req, res) => {
                 .catch(e => res.send(e))
 })
 
+// Tick off an item from the list. Update quantity
+// router.patch('/:id/product/:pid', (req, res) => {
+
+//     List.relatedQuery('products')
+//          .for(req.params.id)
+//          .unrelate()
+//          .where('Products.product_id', req.params.pid)
+//          .then(() => res.sendStatus(204))
+//          .catch(e=> res.send(e))
+
+//     List.relatedQuery('stock')
+//         .for(req.id)
+//         .patch(req.body)
+//         .where("Stocks.product_id", req.params.pid)
+//         .then(list => res.json(list))
+//         .catch(e => res.send(e))
+    
+// })
+
 
 module.exports = router

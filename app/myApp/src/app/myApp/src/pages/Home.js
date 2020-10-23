@@ -6,8 +6,13 @@ import {
   IonTitle,
   IonToolbar,
   IonAvatar,
-  IonText
+  IonText,
+  IonButton,
+  IonIcon
 } from '@ionic/react';
+import { ellipse, square, triangle, cart, refresh, reader, home, scan, analytics  } from 'ionicons/icons';
+
+import HomePage from '../App';
 
 const Home = () => {
   return (
